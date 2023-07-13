@@ -40,3 +40,18 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Linux temp files
+*~
+
+# other stuff
+run/
+docs/build/
+
+Purpur-Server
+Purpur-API
+mc-dev
+purpurclip.jar
+*clip.jar
+last-paper
+mcdevimports.conf
