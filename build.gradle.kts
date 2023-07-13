@@ -43,7 +43,7 @@ subprojects {
     }
 
     publishing.repositories.maven {
-        url = uri("https://repo.pl3x.net/snapshots")
+        url = uri("https://repo.decalium.ru/snapshots")
         credentials(PasswordCredentials::class)
     }
 }
