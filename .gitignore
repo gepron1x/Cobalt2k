@@ -48,8 +48,8 @@ bin/
 run/
 docs/build/
 
-Purpur-Server
-Purpur-API
+Cobalt-Server
+Cobalt-API
 mc-dev
 purpurclip.jar
 *clip.jar
