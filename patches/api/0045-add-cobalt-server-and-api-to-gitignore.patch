@@ -1,0 +1,21 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: "georgijpronuk@gmail.com" <georgijpronuk@gmail.com>
+Date: Thu, 13 Jul 2023 17:00:22 +0300
+Subject: [PATCH] add cobalt-server and api to gitignore
+
+
+diff --git a/pom.xml b/pom.xml
+index c96ffeed4e75d37d1622d25c488d3aa53b9ee838..1a51cbbf4edb7169da84658224a78b175e27f139 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -19,8 +19,8 @@
+ 
+     <properties>
+         <!-- <skipTests>true</skipTests> Paper - This [was] not going to end well -->
+-        <maven.compiler.source>1.8</maven.compiler.source>
+-        <maven.compiler.target>1.8</maven.compiler.target>
++        <maven.compiler.source>17</maven.compiler.source>
++        <maven.compiler.target>17</maven.compiler.target>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+         <adventure.version>4.11.0</adventure.version> <!-- Paper - When updating this make sure to update the linked JavaDocs on the homepage as well! -->
+     </properties>

@@ -51,7 +51,7 @@ index 6a69d14f8f30de6cb6d5c1b61d2521a206587354..c68ef95730c9c0b2f81be1cfbbc849e0
      }
 diff --git a/src/main/java/net/pl3x/purpur/command/DemoCommand.java b/src/main/java/net/pl3x/purpur/command/DemoCommand.java
 new file mode 100644
-index 0000000000000000000000000000000000000000..7ea2e07c95c26528e118541ca2bba4d6117ab28f
+index 0000000000000000000000000000000000000000..8b693be5dcd3cf4349f4102a86271ca312fdfdeb
 --- /dev/null
 +++ b/src/main/java/net/pl3x/purpur/command/DemoCommand.java
 @@ -0,0 +1,39 @@
@@ -81,7 +81,7 @@ index 0000000000000000000000000000000000000000..7ea2e07c95c26528e118541ca2bba4d6
 +                            return execute(context.getSource(), ArgumentEntity.getPlayers(context, "targets"));
 +                        })
 +                )
-+        ).setPermission("bukkit.command.demo");
++        );
 +    }
 +
 +    private static int execute(CommandListenerWrapper sender, Collection<EntityPlayer> targets) {

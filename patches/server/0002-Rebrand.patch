@@ -5,7 +5,7 @@ Subject: [PATCH] Rebrand
 
 
 diff --git a/pom.xml b/pom.xml
-index 642ee96ead8176f5c5a811946b050f4fa5dab6e2..3ef0a08b7a38040e43670d18dc6c5542f9fbb9bb 100644
+index f31b07018124f89d3135bc96e8132e77d0736705..d1ae2c21cd2eec5202a3f3a05297751a4ba3ddd6 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -39,8 +39,10 @@
@@ -15,8 +15,8 @@ index 642ee96ead8176f5c5a811946b050f4fa5dab6e2..3ef0a08b7a38040e43670d18dc6c5542
 -            <groupId>com.tuinity</groupId>
 -            <artifactId>tuinity-api</artifactId>
 +            <!-- Purpur start - our "upstream" is Paper (not Tuinity), so this is necessary for DependencyLoading.kt to work properly -->
-+            <groupId>net.pl3x.purpur</groupId>
-+            <artifactId>purpur-api</artifactId>
++            <groupId>ru.decalium.cobalt</groupId>
++            <artifactId>cobalt-api</artifactId>
 +            <!-- Purpur end -->
              <version>${project.version}</version>
              <scope>compile</scope>
@@ -80,10 +80,10 @@ index 3bc5cd1e53dd7c94b948e7f57f0dc8e073e349b0..87891161f5b06bb8be0e2016b490484e
                      throwable = throwable1;
                      throw throwable1;
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index 6f90a4182e008b49a4b3328e569311382e4bec0d..b02affc621f1960302d8d40426e676a319b0c227 100644
+index b6c497d7ab86a4af4fd2465988d568e83f91206d..4ab4acbd49a877411f1d49659ab43400bcd1a2c0 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
-@@ -1650,7 +1650,7 @@ public abstract class MinecraftServer extends IAsyncTaskHandlerReentrant<TickTas
+@@ -1655,7 +1655,7 @@ public abstract class MinecraftServer extends IAsyncTaskHandlerReentrant<TickTas
      }
  
      public String getServerModName() {
@@ -237,7 +237,7 @@ index 0000000000000000000000000000000000000000..cabfcebf9f944f7a2a2a1cffc7401435
 +    }
 +}
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftServer.java b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-index 507c5255542ba1b958470b4db2c35b1b0b779f17..967473b7109dc78b1b682c342929e40854b2517c 100644
+index d00cc3aa4fea049f5de37a8749c699aac84bbeb8..e56f04b0cfcd84307e4bfa7f0b0491ab551e9e74 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftServer.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
 @@ -230,7 +230,7 @@ import javax.annotation.Nullable; // Paper
